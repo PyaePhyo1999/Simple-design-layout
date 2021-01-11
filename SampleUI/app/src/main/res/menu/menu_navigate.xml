@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:title=""
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home"
+        app:showAsAction="collapseActionView"
+        />
+    <item
+        android:id="@+id/action_app"
+        android:enabled="true"
+        android:icon="@drawable/app"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_gift"
+        android:enabled="true"
+        android:icon="@drawable/christmas_hat"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_santa"
+        android:enabled="true"
+        android:icon="@drawable/giftbox"
+        android:title="" />
+    <item
+        android:id="@+id/action_setting"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="" />
+</menu>

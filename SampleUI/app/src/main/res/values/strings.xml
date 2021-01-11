@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SampleUI</string>
+    <string name="hey"><b>Hey.</b></string>
+    <string name="rishabh"><b>Rishabh</b></string>
+    <string name="btn_gifts">Gifts</string>
+    <string name="btn_trick">Trick</string>
+    <string name="btn_treats">Treats</string>
+    <string name="check_letter">Check the special letter\nby<font fgcolor='#FF03DAC5'> Santa</font></string>
+    <string name="christmas">Christmas</string>
+    <string name="merry">Merry</string>
+    <string name="btn_view_your_gifts">View Your Gifts</string>
+    <string name="more_gifts">More Gifts</string>
+    <string name="view_all">View All</string>
+    <string name="house">House</string>
+    <string name="socks">Socks</string>
+    <string name="toys">Toys</string>
+</resources>
