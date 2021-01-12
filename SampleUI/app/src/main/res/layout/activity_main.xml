@@ -7,6 +7,8 @@
     android:background="@color/black_pale"
     tools:context=".MainActivity">
 
+    <include layout="@layout/home_fragment" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nvMain"
         android:layout_width="match_parent"
@@ -26,20 +28,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu_navigate" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="@dimen/margin_medium_2"
-        app:layout_constraintBottom_toTopOf="@+id/nvMain"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <include layout="@layout/home_fragment"
-
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

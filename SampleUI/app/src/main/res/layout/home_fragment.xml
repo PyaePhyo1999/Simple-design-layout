@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:text="@string/hey"
             android:textColor="@color/white"
-            android:textSize="32sp"
+            android:textSize="@dimen/text_large_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -93,7 +93,7 @@
             android:layout_alignStart="@id/tvHey"
             android:text="@string/rishabh"
             android:textColor="@color/purple_600"
-            android:textSize="32sp"
+            android:textSize="@dimen/text_large_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvHey" />
@@ -113,7 +113,7 @@
         <LinearLayout
             android:id="@+id/llLower"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="150dp"
             android:layout_marginTop="@dimen/margin_medium_5"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -152,12 +152,9 @@
                         android:id="@+id/tvHouse"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/margin_small_2"
-                        android:layout_marginBottom="@dimen/margin_small_2"
                         android:text="@string/house"
                         android:textColor="@color/white"
                         android:textSize="@dimen/text_medium_3"
-
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -168,10 +165,10 @@
 
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cvSocks"
-                android:layout_width="0dp"
-                android:layout_height="150dp"
-                android:layout_marginStart="@dimen/margin_small_1"
                 android:layout_marginTop="@dimen/margin_medium_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_small_1"
                 android:layout_marginEnd="@dimen/margin_small_1"
                 android:layout_weight="1"
                 app:cardBackgroundColor="#77303030"
@@ -185,39 +182,41 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <ImageView
-                        android:id="@+id/imageView5"
+                        android:id="@+id/ivSocks"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="@dimen/margin_extra_large"
                         android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@+id/tvSocks"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                     <TextView
                         android:id="@+id/tvSocks"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_medium_1"
                         android:text="@string/socks"
                         android:textColor="@color/white"
                         android:textSize="@dimen/text_medium_3"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivSocks" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
+
+
+
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/cvToys"
+                android:layout_marginTop="@dimen/margin_medium_5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="@dimen/margin_medium_1"
-                android:layout_marginTop="@dimen/margin_medium_5"
                 android:layout_weight="1"
                 app:cardBackgroundColor="#77303030"
                 app:cardCornerRadius="@dimen/margin_medium_2"
@@ -236,25 +235,28 @@
                         android:layout_height="match_parent"
                         android:layout_marginBottom="@dimen/margin_extra_large"
                         android:scaleType="centerCrop"
-                        app:layout_constraintBottom_toTopOf="@+id/tvToys"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
                         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                     <TextView
                         android:id="@+id/tvToys"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="@dimen/margin_medium_1"
                         android:text="@string/toys"
                         android:textColor="@color/white"
                         android:textSize="@dimen/text_medium_3"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/ivToys" />
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </com.google.android.material.card.MaterialCardView>
+
+
         </LinearLayout>
 
         <TextView
@@ -320,7 +322,7 @@
                 android:fontFamily="serif-monospace"
                 android:text="@string/christmas"
                 android:textColor="@color/pink"
-                android:textSize="@dimen/text_large_2"
+                android:textSize="@dimen/text_large_1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvMerry" />
